@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/taikhoan"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Taikhoan01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_below="@+id/taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@+id/ngaydanhgia"
+            android:id="@+id/noidung"
+            android:text="Ngon Lắm ạ!"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ngaydanhgia"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="25/10/2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ngoisao"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:id="@+id/sao"
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

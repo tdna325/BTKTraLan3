@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Retop">
+
+            <ImageView
+                android:id="@+id/igchitietmilkback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:text="Chi Tiết Sản Phẩm"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:src="@drawable/a01"
+            android:id="@+id/image_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <View
+
+            android:background="#DCDCDC"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_product"
+                android:textColor="#000"
+                android:text="XIU Milk - Nguyễn Hoàng"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/tv_gia"
+                android:textColor="#000"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="10dp"
+                android:text="29,000 VND"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ngoisao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/sao_avg"
+                    android:text="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/add_product"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/add"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </RelativeLayout>
+        <View
+            android:background="#DCDCDC"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:text="Bình Luận"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <View
+            android:background="#DCDCDC"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+        <ListView
+            android:id="@+id/danhgia_lv"
+            android:layout_above="@+id/btn_xemthem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_xemthem"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Xem Thêm"
+            android:textColor="#656464"
+            android:background="@drawable/duongvien_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+        <View
+            android:background="#DCDCDC"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/duongvien_btn"
+            android:id="@+id/danhgiaproduct"
+            android:text="Thêm bình luận/Đánh giá"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

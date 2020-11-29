@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Thêm Bình Luận Đánh Giá"
+        android:textColor="#000"
+        android:textSize="24sp" />
+    <View
+        android:background="#C6C6C6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="Bạn đánh giá sản phẩm này bao nhiêu sao?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/getsao"
+            android:background="@drawable/duongvien"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#000" />
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Ý kiến của bạn về sản phẩm?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/getcmt"
+        android:background="@drawable/duongvien"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_margin="20dp"
+        android:text="Đánh giá sản phẩm"
+        android:textColor="#fff"
+        android:background="@drawable/duongvien_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Hủy"
+        android:textColor="#656464"
+        android:background="@drawable/duongvien_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

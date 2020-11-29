@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".GioHangActivity">
+    <TextView
+        android:id="@+id/khongsp"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/lv_gioHang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"/>
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FB0000"
+            android:text="Tổng tiền:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="#000"
+            android:gravity="center"
+            android:id="@+id/tongtien"
+            android:text="25.000 VNĐ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:backgroundTint="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_menu"
+        app:itemIconTint="@color/color_tab"
+        app:itemTextColor="@color/color_tab"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>
